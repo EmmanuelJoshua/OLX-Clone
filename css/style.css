@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-family: montserrat;
+    color: #002f34;
+}
+.logo{
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+.header{
+    width: 100%;
+    padding: 14px;
+    height: 50px;
+    position: fixed;
+    margin: 0 auto;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+    background-color:#fff;
+    display: inline-flex;
+}
+.head_section{
+    display: inline-flex;
+}
+
+.head_section .point{
+    cursor: pointer;
+}
+.heads{
+    height: 47px;
+    display: flex;
+    align-items: center;
+    background: #ebeeef;
+    padding: 0 8px;
+    border-bottom: 1px solid rgba(0, 47, 52, .64);
+    border-right: 1px solid rgba(0, 47, 52, .2);
+    border-left: 1px solid rgba(0, 47, 52, .2);
+}
+
+.actionButtons{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-left: auto; 
+}
+
+.actionButtons span{
+/*    line-height: 1.15;*/
+    text-transform: uppercase;
+    color: #2a65ea;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.actionButtons button{
+    cursor: pointer;
+    font-size: 14px;
+    height: 48px;
+    padding: 4px 8px 0;
+    display: inline-flex;
+    background-color: #2a65ea;
+    border: 2px solid #2a65ea;
+}
+
+.actionButtons button span{
+    color: #fff;
+}
+
+.location{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    outline: 0;
+    border-width: 0;
+    color: #002f34;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #ebeeef;
+    white-space: nowrap;
+    padding: 0 0 0 16px;
+}
+
+.allcategory{
+    width: 200px;
+    border-right: 1px solid rgba(0, 47, 52, .2);
+}
+
+.allcategory span{
+    padding: 20px;
+}
+
+.search{
+    font-size: 17px;
+    line-height: 1.5;
+    top: 2px;
+    height: 100%;
+    border-width: 0;
+    width: 320px;
+    padding: 0 8px;
+    margin: 0;
+    vertical-align: top;
+    line-height: inherit;
+    background-color: transparent;
+}
+
+.searchBtn{
+    margin-right: -10px;
+    width: 12px;
+    display: flex;
+    cursor: pointer;
+    background-color: #2a65ea;
+    padding: 11px; 
+}
+
+.searchBtn i{
+    margin-left: -5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: middle;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.1;
+}
+
+.mainBG{
+    padding-top: 70px;
+    background-color: white;
+    display: block;
+}
+.mainBG img{
+/*    position: 50%;*/
+    background-color: white;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.container{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.view{
+    margin-top: 10px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    margin-top: 192px;
+    margin-left: -9px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 264px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: gray;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content p{
+    color: gray;
+    margin: 10px 10px 10px 10px;
+    font-size: 15px;
+}
+
+.dropdown-content i{
+    color: gray;
+    margin: 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show1{display:block;}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+    margin-top: 251px;
+    margin-left: -9px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 218px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
+    color: gray;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content2 i{
+    color: gray;
+    margin: 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show2{display:block;}
+
+.sectionContainer{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 32px;
+    
+}
+
+.sectionContainer .contain{
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 47, 52, .2);
+    border-left: 1px solid rgba(0, 47, 52, .2);
+    border-right: 1px solid rgba(0, 47, 52, .2);
+    border-bottom: 1px solid rgba(0, 47, 52, .2);
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: top;
+    text-align: left;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.firstDiv{
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.firstDiv a{
+    align-items: center;
+    display: flex;
+    padding: 16px 24px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.firstDiv a span{
+    color: #002f34;
+    flex: 1 1 auto;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.secondDiv{
+    border-top: 1px solid rgba(0, 47, 52, .2);
+    min-height: 160px;
+    width: 100%;
+}
+
+.secondDiv ul{
+    font-size: 14px;
+    line-height: 30px;
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.secondDiv ul li{
+    display: list-item;
+    width: 80%;
+/*    text-align: -webkit-match-parent;*/
+}
+
+.secondDiv ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgba(0, 47, 52, .64);
+}
+
+.secondDiv ul li a:hover{
+    color: black;
+}
+
+.sectionContainer2{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 32px;
+    margin-left: 36px;
+    width: 96%;;
+}
+
+.sectionContainer2 ul{
+    margin: 0 -8px;
+    padding: 0;
+    list-style: none;
+}
+
+.sectionContainer2 ul li{
+    height: 290px;
+/*    border-radius: 2px;*/
+    display: inline-flex;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.sectionContainer2 ul li a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid rgba(0, 47, 52, .2);
+    overflow: hidden;
+}
+
+.imageOne{
+    cursor: pointer;
+}
+
+.imageOne:hover{
+    box-shadow: 0px 16px 20px 0px rgba(0,0,0,0.2);
+}
+
+.imageOne img{
+    height: 70%;
+    width: 100%;
+}
+
+.imageOne div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 8px 16px;
+}
+
+.imageOne div .price{
+    text-align: left;
+    display: block;
+    max-width: 100%;
+    font-weight: 700;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #002f34;
+    font-size: 20px;
+}
+
+.imageOne div .price i:hover{
+    color: red;
+}
+
+.locate{
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: rgba(0, 47, 52, .64);
+    height: 30px;
+    padding: 0 !important;
+    margin-top: 10px;
+}
+
+.locate span{
+    color: rgba(0, 47, 52, .64);
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px !important; 
+}
+
+.footSection{
+    z-index: 7;
+    width: 100%;
+    min-height: 48px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.topFooter{
+    display: block;
+    background: #ebeeef;
+    border-top: 1px solid rgba(0, 47, 52, .2);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.downFooter{
+    margin: auto;
+    width: 100%;
+    padding: 16px;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.downFooter section{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.downFooter section ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 8px;
+}
+
+.downFooter section ul li a{
+    display: block;
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgba(0, 47, 52, .64);
+}
+
+.downFooter section ul li a:hover{
+    color: black;
+}
+
+.lastFooter{
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    background: #002f34;
+    padding: 16px 0;
+}
+
+.lastFooter2{
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastFooter2 section{
+    color: #fff !important;
+}
+
+.lastFooter2 section a{
+ color: #fff;
+}
+@media only screen and (max-width: 1280px)
+.topFooter{
+    padding: 16px;
+}
+.fab fa-1x fa-facebook:hover{
+    color: black !important;
+}
+.social_icons i:hover{
+    cursor: pointer;
+/*    color: aqua;*/
+}
+._facebook:hover{
+    color: blue;
+}
+._twitter:hover{
+    color:aqua;
+}
+._instagram:hover{
+    color: lightgrey;
+}
+._youtube:hover{
+    color: red;
+}

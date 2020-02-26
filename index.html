@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OLX - Buy and sell for free anytime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/olx.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.5.0-web/fontawesome-free-5.5.0-web/css/all.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+   <nav class="header">
+       <div><img class="logo" src="images/olx.png" alt=""></div>
+       <div id="pageHeader" class="head_section">
+            <div class="heads">
+                <i class="fas fa-1x fa-map-marker-alt"></i>
+                <input class="location" value="Nigeria" placeholder="Search City, Area or Suburb">
+                <i id="angleDown" class="fas fa-lg  point dropbtn" onclick="dropDown1()"></i>      
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#"> <i style="font-size: 23px" class="fas fa-bullseye"></i> Current Location</a>
+          <hr>
+          <p>Popular Locations</p>
+        <a href="#"><i style="font-size: 23px" class="fas fa-map-marker-alt"></i> Lagos</a>
+        <a href="#"><i style="font-size: 23px" class="fas fa-map-marker-alt"></i> Oyo</a>
+        <a href="#"><i style="font-size: 23px" class="fas fa-map-marker-alt"></i> Ekiti</a>
+        <a href="#"><i style="font-size: 23px" class="fas fa-map-marker-alt"></i> Nasarawa</a>
+          <hr style="margin-bottom: 10px;">
+      </div>
+            </div>
+            <div class="heads allcategory">
+                <i class="fas fa-1x fa-th"></i>
+                <span>All Categories</span>
+                <i id="angleDown2" class="fas fa-lg  point dropbtn2" onclick="dropDown2()"></i>
+                  <div id="myDropdown2" class="dropdown-content2">
+                    <a href="#"><i style="font-size: 23px" class="fas fa-th"></i> All Categories</a>
+                    <a href="#"><i style="font-size: 23px" class="fas fa-car"></i> Vehicles</a>
+                    <a href="#"><i style="font-size: 23px" class="fas fa-phone"></i> Mobile Phones</a>
+                    <a href="#"><i style="font-size: 23px" class="fas fa-home"></i> Home, Furniture</a>
+                    <a href="#"><i style="font-size: 23px" class="fas fa-tv"></i> Electronics</a>
+                    <a href="#"><i style="font-size: 23px" class="fas fa-briefcase"></i> Jobs & Services</a>
+                    <a href="#"><i style="font-size: 23px" class="fas fa-shoe-prints"></i> Animals and Pets</a>
+                    <a href="#"><i style="font-size: 23px" class="fas fa-tshirt"></i> Fashion & Beauty</a>
+                  </div>
+                </div>
+            <div class="heads">
+                <input class="search" type="text" placeholder="Find Cars, Mobile Phones and more...">
+                <div class="searchBtn"><i class="fas fa-lg fa-search"></i></div>
+            </div>
+            <div class="actionButtons">
+                <span style="margin-left: 30px;" >Login</span>
+                <button>
+                    <i style="color: white" class="fas fa-1x fa-camera"></i>
+                    <span>Sell</span>
+                </button>
+            </div>
+       </div>
+   </nav>
+    
+        <header class="mainBG">
+            <img src="images/olximg.jpeg">
+            <div class="container">
+                <h2>Popular Categories</h2>
+                <div class="view">
+                    <label>Browse through some of our most popular categories.
+                    </label>
+                    <label style="float: right; color: #2a65ea; font-weight: 600; font-size: 14px; cursor: pointer;">VIEW ALL
+                        <i style="color:#2a65ea; font-size: 19px;" class="fas fa-1x fa-arrow-right"></i>
+                    </label>
+                </div>
+            </div>
+            
+        </header>
+    
+    <div class="container">
+        <ul class="sectionContainer">
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-car"></i>
+                        <span>Vehicles</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Cars</a>
+                        </li>
+                        <li>
+                            <a>Cars Accesories</a>
+                        </li>
+                        <li>
+                            <a>Motorcyles</a>
+                        </li>
+                        <li>
+                            <a>Trucks, Commercial & Agricultural</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-phone"></i>
+                        <span>Mobile Phones & Tablets</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Phones & Mobile Phones</a>
+                        </li>
+                        <li>
+                            <a>Accesories</a>
+                        </li>
+                        <li>
+                            <a>Tablets</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-home"></i>
+                        <span>Home, Furniture & Garden</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Furniture</a>
+                        </li>
+                        <li>
+                            <a>Home Appliances</a>
+                        </li>
+                        <li>
+                            <a>Decor, Garden & Accesories</a>
+                        </li>
+                        <li>
+                            <a>Office & Commercial Furniture</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-landmark"></i>
+                        <span>Real Estate</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Land</a>
+                        </li>
+                        <li>
+                            <a>Houses - Apartments for Rent</a>
+                        </li>
+                        <li>
+                            <a>Houses - Apartments for Sale</a>
+                        </li>
+                        <li>
+                            <a>Office, Shops & Commercial</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-tv"></i>
+                        <span>Electronics & Video</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Cameras & Accesories</a>
+                        </li>
+                        <li>
+                            <a>Computers & Laptops</a>
+                        </li>
+                        <li>
+                            <a>TV, Audio & Video</a>
+                        </li>
+                        <li>
+                            <a>Video Games & Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-briefcase"></i>
+                        <span>Jobs & Services</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Offered Jobs</a>
+                        </li>
+                        <li>
+                            <a>Seeking Work & CVs</a>
+                        </li>
+                        <li>
+                            <a>Services</a>
+                        </li>
+                        <li>
+                            <a>Classes - Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-table-tennis"></i>
+                        <span>Hobbies, Arts & Sports</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Books, CDs & DVDs</a>
+                        </li>
+                        <li>
+                            <a>Musical Instruments</a>
+                        </li>
+                        <li>
+                            <a>Art - Collectibles</a>
+                        </li>
+                        <li>
+                            <a>Crafts</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="contain">
+                <div class="firstDiv">
+                    <a>
+                        <i class="fas fa-4x fa-shoe-prints"></i>
+                        <span>Animals And Pets</span>
+                    </a>
+                </div>
+                <div class="secondDiv">
+                    <ul>
+                        <li>
+                            <a>Dogs & Cats</a>
+                        </li>
+                        <li>
+                            <a>Other Animals</a>
+                        </li>
+                        <li>
+                            <a>Pet's Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h2 style="margin-top: 15px;">Suggested For You</h2>
+    </div>
+    
+    <div class="sectionContainer2">
+        <ul>
+            <li>
+            <a class="imageOne">
+                    <img src="images/iphone.jpg">
+                    <div>
+                        <span class="price">₦40,000 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>iPhone 6</span>
+                        <div class="locate">
+                            <span>Achmbi, kuje</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a class="imageOne">
+                    <img src="images/freezer.jpg">
+                    <div>
+                        <span class="price">₦50,000 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>Thermocool Freezer</span>
+                        <div class="locate">
+                            <span>Ogun, Igbesa</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a class="imageOne">
+                    <img src="images/fridge.jpg">
+                    <div>
+                        <span class="price">₦32,000 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>Refrigerator</span>
+                        <div class="locate">
+                            <span>Abuja, Garki</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a class="imageOne">
+                    <img src="images/ring.jpg">
+                    <div>
+                        <span class="price">₦3,000 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>Diamond Ring</span>
+                        <div class="locate">
+                            <span>lagos, Ikorodu</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a class="imageOne">
+                    <img src="images/gas.jpg">
+                    <div>
+                        <span class="price">₦50,000 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>Gas Cooker</span>
+                        <div class="locate">
+                            <span>Delta, Warri</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a class="imageOne">
+                    <img src="images/table.jpg">
+                    <div>
+                        <span class="price">₦15,000 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>Reading Table</span>
+                        <div class="locate">
+                            <span>Lagos, Alaba</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a class="imageOne">
+                    <img src="images/bag.jpg">
+                    <div>
+                        <span class="price">₦4,000 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>Bucket Bag</span>
+                        <div class="locate">
+                            <span>Kabi, kuje</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            <a class="imageOne">
+                    <img src="images/mold.jpg">
+                    <div>
+                        <span class="price">₦300 <i class="fas fa-sm fa-heart" style="float: right;"></i></span>
+                        <span>Soap Mold</span>
+                        <div class="locate">
+                            <span>Lagos, Ikeja</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <footer class="footSection">
+        <div class="topFooter">
+            <div class="downFooter">
+                <section>
+                    Popular Categories
+                    <ul>
+                        <li>
+                            <a>Phones</a>
+                        </li>
+                        <li>
+                            <a>Cars For Sale</a>
+                        </li>
+                        <li>
+                            <a>Real Estate</a>
+                        </li>
+                        <li>
+                            <a>Apartment For Rent</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    Popular Searches
+                    <ul>
+                        <li>
+                            <a>Generator</a>
+                        </li>
+                        <li>
+                            <a>PS4</a>
+                        </li>
+                        <li>
+                            <a>iPhone 6</a>
+                        </li>
+                        <li>
+                            <a>Sewing Machine</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    Trending
+                    <ul>
+                        <li>
+                            <a>Jobs In Lagos</a>
+                        </li>
+                        <li>
+                            <a>Bicycles</a>
+                        </li>
+                        <li>
+                            <a>Guitars</a>
+                        </li>
+                        <li>
+                            <a>Living Room Furniture</a>
+                        </li>
+                    </ul>
+                </section>
+        
+                <section>
+                    OLX
+                    <ul>
+                        <li>
+                            <a>Help</a>
+                        </li>
+                        <li>
+                            <a>Sitemap</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    Follow Us
+                    <div class="social_icons">
+                        <i style="font-size: 19px;" class="fab fa-1x fa-facebook _facebook"></i>
+                        <i style="font-size: 19px;" class="fab fa-1x fa-twitter _twitter"></i>
+                        <i style="font-size: 19px;" class="fab fa-1x fa-instagram  _instagram"></i>
+                        <i style="font-size: 19px;" class="fab fa-1x fa-youtube _youtube" ></i>
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="lastFooter">
+            <div class="lastFooter2">
+                <section style="margin-right: 28px;">
+                    <span style="color: white; font-weight: 600;">Free Classified In Nigeria</span>
+                    . © 2006-2018
+                    OLX       
+                </section>
+                <section style="margin-left: 28px;" >
+                    <span style="color: white; font-weight: 600;">Other Countries</span>
+                    <a>Kenya</a>
+                    -
+                    <a>South Africa</a>
+                    -
+                    <a>Ghana</a>
+                    -
+                    <a>India</a>
+                    -
+                    <a>Ghana</a>
+                </section>
+            </div>
+        </div>
+    </footer>
+        <script src="js/script.js"></script>
+       
+</body>
+</html>
